@@ -1,13 +1,10 @@
 function palindrome(kata) {
     // you can only write your code here!
-    var j = kata.length - 1;
     for(var i = 0; i < kata.length / 2; i++) {
-        if(kata[i] !== kata[j]) {
+        if(kata[i] !== kata[kata.length-1-i]) {
             return false;
         }
-        j--;
     }
-
     return true;
   }
   
