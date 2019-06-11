@@ -1,22 +1,21 @@
 function angkaPalindrome(num) {
     // you can only write your code here!
-    for(var i = num+1; true; i++) {
-        if(isPalindrome(i)) {
+    for(var i = num+1; !palindrome; i++) {
+        var palindrome = true;
+        var angka = "" + i;
+
+        for(var j = 0; j < angka.length / 2; j++) {
+            if(angka[j] !== angka[angka.length-1-j]) {
+                palindrome = false;
+            }
+        }
+        if(palindrome) {
             return i;
         }
     }
 }
 
-function isPalindrome(num) {
-    var angka = "" + num;
 
-    for(var j = 0; j < angka.length / 2; j++) {
-        if(angka[j] !== angka[angka.length-1-j]) {
-            return false;
-        }
-    }
-    return true;
-}
   
   // TEST CASES
   console.log(angkaPalindrome(8)); // 9

@@ -11,8 +11,8 @@ var dataHandling = (arr) => {
     for(var i = 0; i < arr.length; i++) {
         data = "Nomor ID: " + arr[i][0] + "\n" +
                "Nama Lengkap: " + arr[i][1] + "\n" +
-               "TTL: " + arr[i][2] + "\n" +
-               "Hobi: " + arr[i][3] + "\n";
+               "TTL: " + arr[i][2] + " "  + arr[i][3] + "\n" +
+               "Hobi: " + arr[i][4] + "\n";
 
         console.log(data);
     }
